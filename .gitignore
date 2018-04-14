@@ -1,0 +1,5 @@
+*.pyc
+arctic-capgen-vid/dataset/
+arctic-capgen-vid/dependencies/
+arctic-capgen-vid/exp/
+arctic-capgen-vid/out
