@@ -1,3 +1,3 @@
 # video-description-cnn-rnn
 
-Latex File : https://www.sharelatex.com/read/fxjfhrbfpyrq
+Latex File Link : https://www.sharelatex.com/read/fxjfhrbfpyrq
