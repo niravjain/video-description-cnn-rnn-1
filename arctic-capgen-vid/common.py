@@ -7,9 +7,11 @@ import theano.tensor as tensor
 from theano.sandbox.rng_mrg import MRG_RandomStreams
 
 # the dir where there should be a subdir named 'youtube2text_iccv15'
-RAB_DATASET_BASE_PATH = '/data/lisatmp3/yaoli/datasets/'
+# RAB_DATASET_BASE_PATH = '/data/lisatmp3/yaoli/datasets/'
+RAB_DATASET_BASE_PATH = '/home/najain/video-description-cnn-rnn/arctic-capgen-vid/dataset/'
 # the dir where all the experiment data is dumped.
-RAB_EXP_PATH = '/data/lisatmp3/yaoli/exp/'
+# RAB_EXP_PATH = '/data/lisatmp3/yaoli/exp/'
+RAB_EXP_PATH = '/home/najain/video-description-cnn-rnn/arctic-capgen-vid/exp/'
 
 def get_two_rngs(seed=None):
     if seed is None:

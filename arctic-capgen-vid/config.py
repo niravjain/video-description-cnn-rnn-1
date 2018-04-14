@@ -23,7 +23,8 @@ config = DD({
         'prev2out':True, 
         'ctx2out':True, 
         'patience':20,
-        'max_epochs':500, 
+        #'max_epochs':500, 
+        'max_epochs':50, 
         'decay_c':1e-4,
         'alpha_entropy_r': 0.,
         'alpha_c':0.70602,
@@ -33,7 +34,8 @@ config = DD({
         'maxlen':30, # max length of the descprition
         'optimizer':'adadelta',
         'clip_c': 10.,
-        'batch_size': 64, # for trees use 25
+        'batch_size': 32, # for trees use 25
+        #'batch_size': 64, # for trees use 25
         'valid_batch_size':200,
         # in the unit of minibatches
         'dispFreq':10,
