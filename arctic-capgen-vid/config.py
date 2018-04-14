@@ -27,7 +27,7 @@ config = DD({
         # modified
 	'max_epochs':15,
 	'encoder':'lstm_uni',
-	'maxlen':5 # max length of the description 
+	'maxlen':5, # max length of the description 
         'decay_c':1e-4,
         'alpha_entropy_r': 0.,
         'alpha_c':0.70602,
