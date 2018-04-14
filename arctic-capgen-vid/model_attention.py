@@ -1,6 +1,7 @@
 '''
 Build a soft-attention-based video caption generator
 '''
+import pdb
 import theano
 import theano.tensor as tensor
 import theano.tensor as T
@@ -1014,6 +1015,7 @@ class Attention(object):
             for idx in self.engine.kf_train:
                 tags = [self.engine.train[index] for index in idx]
                 n_samples += len(tags)
+	        # pdb.set_trace()
                 uidx += 1
                 use_noise.set_value(1.)
 
@@ -1037,10 +1039,10 @@ class Attention(object):
                 grads_record.append(grads)
                 if NaN_keys != []:
                     print 'grads contain NaN'
-                    import pdb; pdb.set_trace()
+                    # import pdb; pdb.set_trace()
                 if numpy.isnan(cost) or numpy.isinf(cost):
                     print 'NaN detected in cost'
-                    import pdb; pdb.set_trace()
+                    # import pdb; pdb.set_trace()
                 # update params
                 f_update(lrate)
                 ud_duration = time.time() - ud_start
@@ -1064,6 +1066,7 @@ class Attention(object):
                 if numpy.mod(uidx, sampleFreq) == 0:
                     use_noise.set_value(0.)
                     def sample_execute(from_which):
+			tracked_tags = ['vid569_42', 'vid462_15', 'vid769_22', 'vid620_25', 'vid929_26', 'vid183_6', 'vid1168_29', 'vid738_30', 'vid415_29', 'vid932_10', 'vid664_4', 'vid340_21', 'vid471_11', 'vid983_2', 'vid868_9', 'vid808_25', 'vid254_51', 'vid943_22', 'vid989_26', 'vid1027_20', 'vid757_41', 'vid405_20', 'vid104_24', 'vid104_14', 'vid1182_26', 'vid678_37', 'vid254_42', 'vid799_34', 'vid674_0', 'vid1069_40', 'vid938_0', 'vid606_23']
                         print '------------- sampling from %s ----------'%from_which
                         if from_which == 'train':
                             x_s = x
@@ -1075,8 +1078,10 @@ class Attention(object):
                             idx = self.engine.kf_valid[numpy.random.randint(
                                 1, len(self.engine.kf_valid) - 1)]
                             tags = [self.engine.valid[index] for index in idx]
+                            #x_s, mask_s, ctx_s, ctx_mask_s = data_engine.prepare_data(
                             x_s, mask_s, ctx_s, ctx_mask_s = data_engine.prepare_data(
-                                self.engine, tags)
+                            #    self.engine, tags)
+                                self.engine, tracked_tags)
 
                         stochastic = False
                         for jj in xrange(numpy.minimum(10, x_s.shape[1])):
