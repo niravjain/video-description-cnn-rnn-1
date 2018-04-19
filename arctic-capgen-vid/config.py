@@ -24,17 +24,19 @@ config = DD({
         'ctx2out':True, 
         'patience':20,
         #'max_epochs':500, 
-        'max_epochs':50, 
+        # modified
+	'max_epochs':15,
+	'encoder':'lstm_uni',
+	'maxlen':5, # max length of the description 
         'decay_c':1e-4,
         'alpha_entropy_r': 0.,
         'alpha_c':0.70602,
         'lrate':0.0001,
         'selector':True,
-        'n_words':20000, 
-        'maxlen':30, # max length of the descprition
+        'n_words':20000,
         'optimizer':'adadelta',
         'clip_c': 10.,
-        'batch_size': 32, # for trees use 25
+        'batch_size': 64, # for trees use 25
         #'batch_size': 64, # for trees use 25
         'valid_batch_size':200,
         # in the unit of minibatches

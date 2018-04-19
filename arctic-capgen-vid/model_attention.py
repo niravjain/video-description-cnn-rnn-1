@@ -1066,22 +1066,26 @@ class Attention(object):
                 if numpy.mod(uidx, sampleFreq) == 0:
                     use_noise.set_value(0.)
                     def sample_execute(from_which):
-			tracked_tags = ['vid569_42', 'vid462_15', 'vid769_22', 'vid620_25', 'vid929_26', 'vid183_6', 'vid1168_29', 'vid738_30', 'vid415_29', 'vid932_10', 'vid664_4', 'vid340_21', 'vid471_11', 'vid983_2', 'vid868_9', 'vid808_25', 'vid254_51', 'vid943_22', 'vid989_26', 'vid1027_20', 'vid757_41', 'vid405_20', 'vid104_24', 'vid104_14', 'vid1182_26', 'vid678_37', 'vid254_42', 'vid799_34', 'vid674_0', 'vid1069_40', 'vid938_0', 'vid606_23']
+
+			tracked_tags_train = ['vid37_28', 'vid765_27', 'vid1079_24', 'vid1056_12', 'vid663_37', 'vid163_47', 'vid906_52', 'vid639_0', 'vid742_40', 'vid66_14', 'vid763_30', 'vid20_40', 'vid707_16', 'vid805_10', 'vid303_27', 'vid1023_29', 'vid764_12', 'vid1159_42', 'vid850_10', 'vid228_27', 'vid2_23', 'vid882_24', 'vid992_13', 'vid584_1', 'vid698_21', 'vid470_20', 'vid372_37', 'vid132_21', 'vid78_1', 'vid978_5', 'vid114_28', 'vid1007_41', 'vid223_3', 'vid95_13', 'vid34_23', 'vid1028_24', 'vid922_22', 'vid894_47', 'vid641_15', 'vid318_47', 'vid1061_39', 'vid897_17', 'vid831_17', 'vid536_30', 'vid284_3', 'vid604_40', 'vid908_21', 'vid1027_2', 'vid725_17', 'vid771_12', 'vid940_38', 'vid646_7', 'vid253_59', 'vid936_14', 'vid759_20', 'vid991_19', 'vid22_9', 'vid1009_35', 'vid577_45', 'vid687_35', 'vid326_5', 'vid117_14', 'vid1015_27', 'vid260_30']
+
+			tracked_tags_valid = ['vid1215_50', 'vid1235_24', 'vid1295_10', 'vid1278_4', 'vid1206_17', 'vid1241_15', 'vid1243_56', 'vid1248_40', 'vid1287_13', 'vid1289_0', 'vid1242_41', 'vid1230_15', 'vid1211_11', 'vid1265_12', 'vid1244_37', 'vid1263_1', 'vid1255_22', 'vid1256_36', 'vid1285_7', 'vid1278_46', 'vid1250_6', 'vid1287_27', 'vid1254_45', 'vid1227_10', 'vid1235_34', 'vid1234_1', 'vid1259_11', 'vid1289_7', 'vid1239_2', 'vid1280_3', 'vid1257_30', 'vid1247_18', 'vid1275_10', 'vid1238_12', 'vid1219_3', 'vid1257_14', 'vid1235_16', 'vid1291_6', 'vid1227_26', 'vid1238_25', 'vid1283_12', 'vid1230_37', 'vid1225_1', 'vid1238_16', 'vid1221_27', 'vid1242_2', 'vid1223_36', 'vid1252_16', 'vid1294_12', 'vid1206_31', 'vid1275_21', 'vid1289_30', 'vid1263_25', 'vid1247_39', 'vid1290_52', 'vid1207_51', 'vid1245_0', 'vid1215_32', 'vid1208_27', 'vid1235_39', 'vid1238_28', 'vid1281_6', 'vid1216_36', 'vid1229_37', 'vid1245_32', 'vid1292_4', 'vid1269_7', 'vid1215_1', 'vid1201_35', 'vid1250_9', 'vid1229_15', 'vid1251_15', 'vid1294_5', 'vid1212_20', 'vid1214_28', 'vid1265_58', 'vid1283_22', 'vid1243_0', 'vid1293_41', 'vid1227_53', 'vid1205_37', 'vid1207_45', 'vid1290_11', 'vid1279_8', 'vid1293_14', 'vid1210_16', 'vid1267_0', 'vid1290_39', 'vid1235_10', 'vid1263_31', 'vid1211_22', 'vid1239_24', 'vid1274_5', 'vid1235_37', 'vid1295_31', 'vid1286_2', 'vid1201_22', 'vid1242_25', 'vid1205_38', 'vid1209_1', 'vid1256_7', 'vid1210_0', 'vid1216_41', 'vid1230_33', 'vid1226_0', 'vid1280_29', 'vid1226_44', 'vid1290_29', 'vid1207_48', 'vid1222_15', 'vid1256_13', 'vid1265_51', 'vid1294_57', 'vid1210_19', 'vid1259_34', 'vid1266_10', 'vid1248_52', 'vid1206_16', 'vid1204_28', 'vid1216_3', 'vid1256_37', 'vid1203_25', 'vid1276_18', 'vid1232_19', 'vid1243_12', 'vid1254_49', 'vid1273_5', 'vid1206_8', 'vid1229_2', 'vid1221_11', 'vid1256_15', 'vid1243_4', 'vid1209_27', 'vid1259_7', 'vid1246_30', 'vid1223_35', 'vid1241_2', 'vid1219_22', 'vid1210_29', 'vid1261_50', 'vid1275_6', 'vid1221_1', 'vid1273_16', 'vid1298_5', 'vid1258_41', 'vid1295_0', 'vid1282_21', 'vid1213_9', 'vid1208_45', 'vid1293_38', 'vid1267_10', 'vid1251_19', 'vid1230_12', 'vid1290_32', 'vid1229_51', 'vid1285_16', 'vid1237_18', 'vid1229_3', 'vid1213_6', 'vid1258_17', 'vid1273_3', 'vid1279_35', 'vid1240_35', 'vid1271_19', 'vid1269_18', 'vid1297_24', 'vid1268_43', 'vid1234_34', 'vid1265_20', 'vid1220_6', 'vid1296_24', 'vid1214_27', 'vid1253_2', 'vid1259_37', 'vid1268_42', 'vid1288_0', 'vid1204_1', 'vid1252_11', 'vid1266_47', 'vid1241_24', 'vid1234_2', 'vid1227_56', 'vid1273_27', 'vid1240_5', 'vid1241_10', 'vid1294_2', 'vid1239_28', 'vid1233_35', 'vid1294_0', 'vid1265_32', 'vid1201_31', 'vid1282_32', 'vid1261_38', 'vid1300_17', 'vid1262_18', 'vid1259_17', 'vid1244_32', 'vid1282_26', 'vid1268_5', 'vid1265_28']
+
                         print '------------- sampling from %s ----------'%from_which
                         if from_which == 'train':
                             x_s = x
                             mask_s = mask
                             ctx_s = ctx
                             ctx_mask_s = ctx_mask
+                            x_s, mask_s, ctx_s, ctx_mask_s = data_engine.prepare_data(
+                                self.engine, tracked_tags_train)
 
                         elif from_which == 'valid':
                             idx = self.engine.kf_valid[numpy.random.randint(
                                 1, len(self.engine.kf_valid) - 1)]
                             tags = [self.engine.valid[index] for index in idx]
-                            #x_s, mask_s, ctx_s, ctx_mask_s = data_engine.prepare_data(
                             x_s, mask_s, ctx_s, ctx_mask_s = data_engine.prepare_data(
-                            #    self.engine, tags)
-                                self.engine, tracked_tags)
+                                self.engine, tracked_tags_valid)
 
                         stochastic = False
                         for jj in xrange(numpy.minimum(10, x_s.shape[1])):
