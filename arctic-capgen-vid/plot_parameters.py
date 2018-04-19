@@ -13,7 +13,7 @@ def plot_params(name, metric):
 	plt.title(title)
 	plt.bar(range(len(metric)), metric, align='center')
 	plt.xticks(range(len(metric)), x_names)
-	plt.savefig(name+".png")
+	plt.savefig("{}.png".format(name))
 	plt.gcf().clear()
 	# plt.show()
 
