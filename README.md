@@ -151,7 +151,7 @@ Follow the steps:
 #SBATCH -n 16                       # Total number of mpi tasks requested
 #SBATCH -t 24:00:00                   # Maximum Run time (hh:mm:ss) - 1.5 hours
 #SBATCH -p gtxtitanx                   # Specify gpu/CPU
-/home/najain/video-description-cnn-rnn/arctic-capgen-vid/run_theano.sh
+$HOME/video-description-cnn-rnn/arctic-capgen-vid/run_theano.sh
 ```
 2. Submit batch file to run by executing command:
 ```
