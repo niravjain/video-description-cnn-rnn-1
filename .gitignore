@@ -1,0 +1,9 @@
+*.pyc
+arctic-capgen-vid/dataset/
+arctic-capgen-vid/dependencies/
+arctic-capgen-vid/exp/
+arctic-capgen-vid/out
+.DS_Store
+.idea/
+arctic-capgen-vid/.DS_STORE
+arctic-capgen-vid/experiments/.DS_STORE
