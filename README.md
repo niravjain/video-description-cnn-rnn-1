@@ -125,3 +125,60 @@ wget 'http://lisaweb.iro.umontreal.ca/transfert/lisa/users/yaoli/youtube2text_ic
 unzip youtube2text_iccv15.zip 
 ```
 
+# Running the project
+1. Go to common.py and change the value of following variables: RAB_DATASET_BASE_PATH and RAB_EXP_PATH according to your specific setup. The first path is the parent dir path containing youtube2text_iccv15 dataset folder. The second path specifies where you would like to save all the experimental results. Create a "exp" folder for it.
+2. Before training the model, we suggest to test data_engine.py by running python data_engine.py without any error.
+3. It is also useful to verify coco-caption evaluation pipeline works properly by running python metrics.py without any error.
+4. Now ready to launch the training
+- to run on gpu: 
+```
+./run_theano.sh
+```
+- to run on cpu: 
+```
+THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python train_model.py
+```
+
+## Running the training in background
+Since training the model takes a lot of time, you can use "sbatch" command on ARC cluster to run the training in background.
+Follow the steps:
+1. Create a batch file called "run_model.batch" and add following lines in it
+```
+#!/bin/bash
+#SBATCH -J stdm_cnn_rnn               # Job name
+#SBATCH -o stdm_cnn_rnn.out         # Name of stdout output file (%j expands to jobId)
+#SBATCH -N 1                          # Total number of nodes requested
+#SBATCH -n 16                       # Total number of mpi tasks requested
+#SBATCH -t 24:00:00                   # Maximum Run time (hh:mm:ss) - 1.5 hours
+#SBATCH -p gtxtitanx                   # Specify gpu/CPU
+/home/najain/video-description-cnn-rnn/arctic-capgen-vid/run_theano.sh
+```
+2. Submit batch file to run by executing command:
+```
+sbatch run_model.batch
+```
+Above command will generate a job id for corresponding to that batch file execution
+
+3. Check job status
+```
+scontrol show job=<job_id>
+```
+The job status should be "RUNNING". If it is "PENDING" then most likely there are no nodes available right now, and the job will start running as soon as the requested node (in batch file) gets available to run.
+
+4. Check running jobs
+```
+squeue -u <unity_id> -t running
+```
+
+# Tracking video descriptions
+Video descriptions can be tracked in the output file of the batch file. In the example batch file above, output will be generated in "stdm_cnn_rnn.out" file. Thus, check the descriptions by opening the file
+```
+less stdm_cnn_rnn.out
+```
+and search for 'sampling from train'
+
+# Running visualization script
+```
+python plot_parameters.py
+```
+This will generate 4 files "BLEU.png", "CIDer.png", "METEOR.png", "ROUGE.png"
