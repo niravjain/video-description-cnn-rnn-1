@@ -170,15 +170,19 @@ The job status should be "RUNNING". If it is "PENDING" then most likely there ar
 squeue -u <unity_id> -t running
 ```
 
-# Tracking video descriptions
+## Tracking video descriptions
 Video descriptions can be tracked in the output file of the batch file. In the example batch file above, output will be generated in "stdm_cnn_rnn.out" file. Thus, check the descriptions by opening the file
 ```
 less stdm_cnn_rnn.out
 ```
 and search for 'sampling from train'
 
-# Running visualization script
+## Running visualization script
 ```
 python plot_parameters.py
 ```
 This will generate 4 files "BLEU.png", "CIDer.png", "METEOR.png", "ROUGE.png"
+
+# Acknowledgements
+- We thank the arctic-capgen-vid team for their licensed project, which we could extend for exploration purposes
+- We thank our instructors Dr. Raju Vatsavai and Bharathkumar Ramachandra for their support throughout the project
