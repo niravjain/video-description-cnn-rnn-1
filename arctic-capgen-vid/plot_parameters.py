@@ -1,26 +1,27 @@
-import numpy as np
-
-import os
 import glob
-# from pathlib import Path
 import matplotlib.pyplot as plt
 
+
 def plot_params(name, metric):
-
-	x_names = ['Config '+str((idx+1)) for idx in range(len(metric))]
-
-	title = "Comparing {} metric for 9 configurations".format(name)
+	# Setting a title for the plot
+	title = "Comparing {} metric for {} configurations".format(name, len(metric))
 	plt.title(title)
-	plt.bar(range(len(metric)), metric, align='center')
-	plt.xticks(range(len(metric)), x_names)
+
+	# Line graph for each config
+	for idx, config in enumerate(metric):
+		plt.plot(range(len(config)), config, label="Config {}".format(idx+1))
+
+	# Best position
+	plt.legend(loc=0)
+
+	# Save the plot as a file
 	plt.savefig("{}.png".format(name))
+
+	# Clear the plot so that next one can be created from scratch
 	plt.gcf().clear()
-	# plt.show()
 
 
 def get_params():
-	print "hi"
-
 	bleu = list()
 	meteor = list()
 	rouge = list()
@@ -31,17 +32,33 @@ def get_params():
 	# To get the files in the order of configurations
 	sorted(pathlist)
 
-	for str_path in pathlist:
+	for idx, str_path in enumerate(pathlist):
+		# Create an array for storing all values of this file
+		bleu.append([])
+		meteor.append([])
+		rouge.append([])
+		cider.append([])
+
+		# Open the file
 		with open(str_path) as f:
-			last_line = f.readlines()[-1].split()
-			# print type(last_line[15])
-			bleu.append(float(last_line[15]))
-			meteor.append(float(last_line[19]))
-			rouge.append(float(last_line[20]))
-			cider.append(float(last_line[21]))
+			lines = f.readlines()
+
+			for line in lines:
+				split_line = line.split()
+
+				# # For validation value of metrics
+				# bleu[idx].append(float(split_line[8]))
+				# meteor[idx].append(float(split_line[12]))
+				# rouge[idx].append(float(split_line[13]))
+				# cider[idx].append(float(split_line[14]))
+
+				# For test value of metrics
+				bleu[idx].append(float(split_line[15]))
+				meteor[idx].append(float(split_line[19]))
+				rouge[idx].append(float(split_line[20]))
+				cider[idx].append(float(split_line[21]))
 
 	print bleu, meteor, rouge, cider
-	# print "bye"
 
 	plot_params("BLEU", bleu)
 	plot_params("METEOR", meteor)
