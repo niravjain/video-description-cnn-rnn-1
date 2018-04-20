@@ -35,7 +35,7 @@ Note: due to the fact that video captioning research has gradually converged to 
   2. to run on gpu: `THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python train_model.py`
 
 #####Notes on running experiments
-Running `train_model.py` for the first time takes much longer since Theano needs to compile for the first time lots of things and cache on disk for the future runs. You will probably see some warning messages on stdout. It is safe to ignore all of them. Both model parameters and configurations are saved (the saving path is printed out on stdout, easy to find). The most important thing to monitor is `train_valid_test.txt` in the exp output folder. It is a big table saving all metrics per validation. Please refer to `model_attention.py` line 1207 -- 1215 for actual meaning of columns. 
+Running `train_model.py` for the first time takes much longer since Theano needs to compile for the first time lots of things and cache on disk for the future runs. You will probably see some warning messages on stdout. It is safe to ignore all of them. Both model parameters and configurations are saved (the saving path is printed out on stdout, easy to find). The most important thing to monitor is `train_valid_test.txt` in the exp output folder. It is a big table saving all metrics per validation. Please refer to `model_attention.py` line 1207 -- 1215 for actual meaning of columns.
 
 #####Trouble shooting
 This is a known problem in COCO evaluation script (their code) where METEOR are computed by creating another subprocess, which does not get killed automatically. As METEOR is called more and more, it eats up mem gradually. 
@@ -43,4 +43,3 @@ To fix the problem, add this line after line https://github.com/tylin/coco-capti
 `self.meteor_p.kill()`
 
 If you have any questions, drop us email at li.yao@umontreal.ca.
-
