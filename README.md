@@ -129,7 +129,7 @@ unzip youtube2text_iccv15.zip
 1. Go to common.py and change the value of following variables: RAB_DATASET_BASE_PATH and RAB_EXP_PATH according to your specific setup. The first path is the parent dir path containing youtube2text_iccv15 dataset folder. The second path specifies where you would like to save all the experimental results. Create a "exp" folder for it.
 2. Before training the model, we suggest to test data_engine.py by running python data_engine.py without any error.
 3. It is also useful to verify coco-caption evaluation pipeline works properly by running python metrics.py without any error.
-4. Now ready to launch the training
+4. Now ready to launch the training. You can change the configuration of the model in config.py
 - to run on gpu: 
 ```
 ./run_theano.sh
