@@ -1,28 +1,26 @@
-# video-description-cnn-rnn
+# Analyzing Hyperparameters for a CNN RNN Video Description Framework
 
-Latex File Link : https://www.sharelatex.com/read/fxjfhrbfpyrq
-
-
-Welcome to the video-description-cnn-rnn wiki!
-
-There are two categories of temporal structure present in video: (1) local structure and (2) global structure.
-- Local temporal structure refers to the fine-grained motion information that characterizes punctuated actions such
-as “answering the telephone” or “standing up”. Actions such as these are relatively localized in time, evolving over only a few consecutive frames.
-- On the other hand, when we refer to global temporal structure in video, we refer to the sequence in which objects, actions, scenes and people, etc. appear in a video.
+In this project, we explore a deep learning encoder-decoder framework that describes objects or/and activities in a video by modelling the local and global temporal structure of videos. The framework "arctic-capgen-vid" consists of deep Convolutional Neural Networks (CNNs) which serve as an encoder and Long Short-Term Memory Network (LSTM) for the decoder. This design has been proven effective for producing high learning capacity models for video to text translations as long as critical hyperparameters are identified and provided with appropriate values.  Our study therefore seeks to discover the pivotal hyperparameters and experimental conditions in which this approach works best. The framework for our experiments provides description for the Youtube2Text dataset and performs exceptionally well for both BLEU and METEOR metrics.
 
 # Setting up environment
-- Use python 2.x
+- We are using [ARC clusters](http://moss.csc.ncsu.edu/~mueller/cluster/arc/)  which are GPU clusters provided by our university. You can run our project on CPU as well, since the following setup steps will work for local machine too. However, training on GPU provided us with a speed boost of at least 10x.
+- You will need to use python 2.x
+
+## Accessing ARC nodes
+Steps to access ARC nodes can be followed by the "Accessing the Cluster" section from [ARC Cluters](http://moss.csc.ncsu.edu/~mueller/cluster/arc/)
 
 ## Assign node
+Once looged in to the ARC cluster, you will have to assign a node to install dependencies in your workspace. 
+
+To check available nodes, run
+```
+sinfo
+```
+Then, use the following command to assign a node.
 ```
 srun -n 32 -N 2 -p gtx780 --pty /bin/bash
 OR
 srun -n 16 -N 1 -p gtx1080 --pty /bin/bash
-```
-
-## Seeing which jobs are active
-```
-squeue -u <username> -t RUNNING
 ```
 
 ## Installing python dependencies
@@ -50,16 +48,16 @@ make install
 # git config --global user.email "Your email address"
 ```
 
-## Checkout arctic-capgen-vid repo
+## Checkout repo
 ```
 cd ~
-git clone https://github.com/yaoli/arctic-capgen-vid.git
+git clone https://github.com/rohitnaik246/video-description-cnn-rnn.git
 ```
 
 ## Install dependencies
 ```
-mkdir ~/arctic-capgen-vid/dependencies
-cd ~/arctic-capgen-vid/dependencies
+mkdir ~/video-description-cnn-rnn/arctic-capgen-vid/dependencies
+cd ~/video-description-cnn-rnn/arctic-capgen-vid/dependencies
 
 # Coco-caption
 git clone https://github.com/tylin/coco-caption.git
@@ -80,7 +78,7 @@ vim ~/.bash_profile
 export PATH=~/.local/bin:$PATH
 
 # Theano
-cd ~/arctic-capgen-vid/dependencies
+cd ~/video-description-cnn-rnn/arctic-capgen-vid/dependencies
 git clone git://github.com/Theano/Theano.git
 cd Theano
 pip install --user -e .
@@ -105,9 +103,9 @@ python setup.py install --user
 ```
 vim ~/.bash_profile
 
-export PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/arctic-capgen-vid/dependencies/Jobman/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/video-description-cnn-rnn/arctic-capgen-vid/dependencies/Jobman/bin
 
-export PYTHONPATH=$PYTHONPATH:$HOME/arctic-capgen-vid/dependencies/Theano/:$HOME/arctic-capgen-vid/dependencies/coco-caption:$HOME/arctic-capgen-vid/dependencies/Jobman
+export PYTHONPATH=$PYTHONPATH:$HOME/video-description-cnn-rnn/arctic-capgen-vid/dependencies/Theano/:$HOME/video-description-cnn-rnn/arctic-capgen-vid/dependencies/coco-caption:$HOME/video-description-cnn-rnn/arctic-capgen-vid/dependencies/Jobman
 
 export CPATH=$CPATH:~/.local/include
 export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib
@@ -121,10 +119,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib
 
 ## Download dataset
 ```
-mkdir ~/arctic-capgen-vid/dataset
-cd ~/arctic-capgen-vid/dataset
+mkdir ~/video-description-cnn-rnn/arctic-capgen-vid/dataset
+cd ~/video-description-cnn-rnn/arctic-capgen-vid/dataset
 wget 'http://lisaweb.iro.umontreal.ca/transfert/lisa/users/yaoli/youtube2text_iccv15.zip'
 unzip youtube2text_iccv15.zip 
 ```
 
-## ALL DONE. NOW FOLLOW STEPS MENTIONED IN REPO's README FILE ;)
