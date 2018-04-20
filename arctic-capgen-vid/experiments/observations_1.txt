@@ -1,0 +1,282 @@
+Encoder: lstm_uni, length: 5
+
+
+Epoch 0:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  a a is is
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a a
+Truth  2 :  someone sliced an onion
+Sample ( 0 )  2 :  a a is
+Truth  3 :  very strong young man
+Sample ( 0 )  3 :  a a is
+Truth  4 :  the turtle is walking
+Sample ( 0 )  4 :  a a
+Truth  5 :  someone preparing something
+Sample ( 0 )  5 :  a a is is
+Truth  6 :  players played football
+Sample ( 0 )  6 :  a a is
+Truth  7 :  a cat walking
+Sample ( 0 )  7 :  a a is
+Truth  8 :  a woman cuts vegetables
+Sample ( 0 )  8 :  a a is
+Truth  9 :  a dog skating
+Sample ( 0 )  9 :  a a is
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a a is
+Truth  1 :  a man is writing
+Sample ( 0 )  1 :  a a is
+Truth  2 :  someone petting a beaver
+Sample ( 0 )  2 :  a a is
+Truth  3 :  a man playing music
+Sample ( 0 )  3 :  a a
+Truth  4 :  a man show magic
+Sample ( 0 )  4 :  a a is is is
+Truth  5 :  someone de-scaled a fish
+Sample ( 0 )  5 :  a a is
+Truth  6 :  he is preparing salad
+Sample ( 0 )  6 :  a a is is
+Truth  7 :  a fox walks cautiously
+Sample ( 0 )  7 :  a a is
+Truth  8 :  the cat is playing
+Sample ( 0 )  8 :  a a is
+Truth  9 :  a crying boy
+Sample ( 0 )  9 :  a a is
+
+
+
+Epoch 10:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  people are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a boy playing guitar
+Truth  2 :  someone sliced an onion
+Sample ( 0 )  2 :  someone is slicing
+Truth  3 :  very strong young man
+Sample ( 0 )  3 :  a baby is playing
+Truth  4 :  the turtle is walking
+Sample ( 0 )  4 :  a turtle is walking
+Truth  5 :  someone preparing something
+Sample ( 0 )  5 :  someone is making
+Truth  6 :  players played football
+Sample ( 0 )  6 :  a man is running
+Truth  7 :  a cat walking
+Sample ( 0 )  7 :  a kitten is playing
+Truth  8 :  a woman cuts vegetables
+Sample ( 0 )  8 :  someone is slicing
+Truth  9 :  a dog skating
+Sample ( 0 )  9 :  a dog is playing
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat is playing
+Truth  1 :  a man is writing
+Sample ( 0 )  1 :  a woman is playing
+Truth  2 :  someone petting a beaver
+Sample ( 0 )  2 :  a animal is eating
+Truth  3 :  a man playing music
+Sample ( 0 )  3 :  a man is playing
+Truth  4 :  a man show magic
+Sample ( 0 )  4 :  a man is dancing
+Truth  5 :  someone de-scaled a fish
+Sample ( 0 )  5 :  a man is cooking
+Truth  6 :  he is preparing salad
+Sample ( 0 )  6 :  a person is cooking
+Truth  7 :  a fox walks cautiously
+Sample ( 0 )  7 :  a dog is eating
+Truth  8 :  the cat is playing
+Sample ( 0 )  8 :  a cat is eating
+Truth  9 :  a crying boy
+Sample ( 0 )  9 :  a baby is playing
+
+
+
+Epoch 20:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  girls are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a man playing guitar
+Truth  2 :  someone sliced an onion
+Sample ( 0 )  2 :  a man is cooking
+Truth  3 :  very strong young man
+Sample ( 0 )  3 :  a man is playing
+Truth  4 :  the turtle is walking
+Sample ( 0 )  4 :  a turtle is walking
+Truth  5 :  someone preparing something
+Sample ( 0 )  5 :  someone is being
+Truth  6 :  players played football
+Sample ( 0 )  6 :  a man is running
+Truth  7 :  a cat walking
+Sample ( 0 )  7 :  a cat is playing
+Truth  8 :  a woman cuts vegetables
+Sample ( 0 )  8 :  a person is cooking
+Truth  9 :  a dog skating
+Sample ( 0 )  9 :  a dog is playing
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat is playing
+Truth  1 :  a man is writing
+Sample ( 0 )  1 :  a man is playing
+Truth  2 :  someone petting a beaver
+Sample ( 0 )  2 :  a cat is eating
+Truth  3 :  a man playing music
+Sample ( 0 )  3 :  a man playing
+Truth  4 :  a man show magic
+Sample ( 0 )  4 :  a man is dancing
+Truth  5 :  someone de-scaled a fish
+Sample ( 0 )  5 :  a man is cooking
+Truth  6 :  he is preparing salad
+Sample ( 0 )  6 :  someone is cooking
+Truth  7 :  a fox walks cautiously
+Sample ( 0 )  7 :  a man is running
+Truth  8 :  the cat is playing
+Sample ( 0 )  8 :  a man is eating
+Truth  9 :  a crying boy
+Sample ( 0 )  9 :  a baby is playing
+
+
+
+Epoch 30:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  people are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a man playing guitar
+Truth  2 :  someone sliced an onion
+Sample ( 0 )  2 :  a man is cooking
+Truth  3 :  very strong young man
+Sample ( 0 )  3 :  a man is playing
+Truth  4 :  the turtle is walking
+Sample ( 0 )  4 :  a turtle is walking
+Truth  5 :  someone preparing something
+Sample ( 0 )  5 :  someone is cooking
+Truth  6 :  players played football
+Sample ( 0 )  6 :  a man is running
+Truth  7 :  a cat walking
+Sample ( 0 )  7 : 
+Truth  8 :  a woman cuts vegetables
+Sample ( 0 )  8 :  a man is cooking
+Truth  9 :  a dog skating
+Sample ( 0 )  9 :  a dog is playing
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat is playing
+Truth  1 :  a man is writing
+Sample ( 0 )  1 :  a man is cooking
+Truth  2 :  someone petting a beaver
+Sample ( 0 )  2 :  the animal is eating
+Truth  3 :  a man playing music
+Sample ( 0 )  3 :  a man playing music
+Truth  4 :  a man show magic
+Sample ( 0 )  4 :  people are dancing
+Truth  5 :  someone de-scaled a fish
+Sample ( 0 )  5 :  a man is cooking
+Truth  6 :  he is preparing salad
+Sample ( 0 )  6 :  a man is cooking
+Truth  7 :  a fox walks cautiously
+Sample ( 0 )  7 :  a man is running
+Truth  8 :  the cat is playing
+Sample ( 0 )  8 :  the animal is playing
+Truth  9 :  a crying boy
+Sample ( 0 )  9 :  a baby is playing
+
+
+
+Epoch 40:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  people are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a girl playing guitar
+Truth  2 :  someone sliced an onion
+Sample ( 0 )  2 :  someone is slicing onion
+Truth  3 :  very strong young man
+Sample ( 0 )  3 :  a man is playing
+Truth  4 :  the turtle is walking
+Sample ( 0 )  4 :  a turtle is walking
+Truth  5 :  someone preparing something
+Sample ( 0 )  5 :  someone is cooking
+Truth  6 :  players played football
+Sample ( 0 )  6 :  a man is running
+Truth  7 :  a cat walking
+Sample ( 0 )  7 :  a cat is playing
+Truth  8 :  a woman cuts vegetables
+Sample ( 0 )  8 :  a person is cooking
+Truth  9 :  a dog skating
+Sample ( 0 )  9 :  a dog is skateboarding
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat playing
+Truth  1 :  a man is writing
+Sample ( 0 )  1 :  a man playing
+Truth  2 :  someone petting a beaver
+Sample ( 0 )  2 :  a cat is eating
+Truth  3 :  a man playing music
+Sample ( 0 )  3 :  a man playing flute
+Truth  4 :  a man show magic
+Sample ( 0 )  4 :  people are dancing
+Truth  5 :  someone de-scaled a fish
+Sample ( 0 )  5 :  a man is cooking
+Truth  6 :  he is preparing salad
+Sample ( 0 )  6 :  a person is cooking
+Truth  7 :  a fox walks cautiously
+Sample ( 0 )  7 :  a dog is eating
+Truth  8 :  the cat is playing
+Sample ( 0 )  8 :  a dog is playing
+Truth  9 :  a crying boy
+Sample ( 0 )  9 :  a baby is playing
+
+
+
+Epoch 50:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  the girls are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a boy playing guitar
+Truth  2 :  someone sliced an onion
+Sample ( 0 )  2 :  a man is cooking
+Truth  3 :  very strong young man
+Sample ( 0 )  3 :  a man is playing
+Truth  4 :  the turtle is walking
+Sample ( 0 )  4 :  a turtle is walking
+Truth  5 :  someone preparing something
+Sample ( 0 )  5 :  a person is cooking
+Truth  6 :  players played football
+Sample ( 0 )  6 :  a man is running
+Truth  7 :  a cat walking
+Sample ( 0 )  7 :  a cat is playing
+Truth  8 :  a woman cuts vegetables
+Sample ( 0 )  8 :  a person is cooking
+Truth  9 :  a dog skating
+Sample ( 0 )  9 :  a dog is playing
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat playing
+Truth  1 :  a man is writing
+Sample ( 0 )  1 :  a man is playing
+Truth  2 :  someone petting a beaver
+Sample ( 0 )  2 :  a cat is eating
+Truth  3 :  a man playing music
+Sample ( 0 )  3 :  a man is playing
+Truth  4 :  a man show magic
+Sample ( 0 )  4 :  a man is dancing
+Truth  5 :  someone de-scaled a fish
+Sample ( 0 )  5 :  a man is cooking
+Truth  6 :  he is preparing salad
+Sample ( 0 )  6 :  a person is cooking
+Truth  7 :  a fox walks cautiously
+Sample ( 0 )  7 :  a cat is running
+Truth  8 :  the cat is playing
+Sample ( 0 )  8 :  a cat is playing
+Truth  9 :  a crying boy
+Sample ( 0 )  9 :  a baby is playing
+
+
+Comments:
+1. Since weights are random at first, we can see that the descriptions generated in the first few Epochs are meaningless
+2. Epoch 6 onwards, meaningful descriptions start getting generated.
+3. The model seems to be doing a good job at identifying the correct action performed in the video. For instance, for true action of "playing", the correct textual description "playing" is generated consistently across different epochs. However, the text generated for the objects seem to be varying. For instance, a true object "fox" is described as "dog", "man", cat" but never as "fox". It might be possible 

@@ -1,0 +1,276 @@
+Encoder: lstm_uni, length: 12
+
+
+Epoch 0:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 : 
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 : 
+Truth  2 :  a boy playing with the scissors
+Sample ( 0 )  2 : 
+Truth  3 :  someone sliced an onion
+Sample ( 0 )  3 : 
+Truth  4 :  very strong young man
+Sample ( 0 )  4 : 
+Truth  5 :  the girl rode the horse next to the fence
+Sample ( 0 )  5 : 
+Truth  6 :  the turtle is walking
+Sample ( 0 )  6 : 
+Truth  7 :  dog is barking and shaking his tail
+Sample ( 0 )  7 : 
+Truth  8 :  the plane soared in the sky
+Sample ( 0 )  8 : 
+Truth  9 :  a man is cutting an apple without knife
+Sample ( 0 )  9 : 
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 : 
+Truth  1 :  the person is cutting tomato
+Sample ( 0 )  1 : 
+Truth  2 :  a man is writing
+Sample ( 0 )  2 : 
+Truth  3 :  a man is doing some skating stunts
+Sample ( 0 )  3 : 
+Truth  4 :  the person is playing drums
+Sample ( 0 )  4 : 
+Truth  5 :  someone petting a beaver
+Sample ( 0 )  5 : 
+Truth  6 :  a person eating with hands and spoon
+Sample ( 0 )  6 : 
+Truth  7 :  a boy trying to walk and dance
+Sample ( 0 )  7 : 
+Truth  8 :  a man cuts some wood with a knife
+Sample ( 0 )  8 : 
+Truth  9 :  a cat jumping out a box
+Sample ( 0 )  9 :
+
+
+
+Epoch 10:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  three animated girls are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a boy is playing guitar
+Truth  2 :  a boy playing with the scissors
+Sample ( 0 )  2 :  a boy is cutting paper
+Truth  3 :  someone sliced an onion
+Sample ( 0 )  3 :  a man is slicing potatoes
+Truth  4 :  very strong young man
+Sample ( 0 )  4 :  a man is doing push-ups
+Truth  5 :  the girl rode the horse next to the fence
+Sample ( 0 )  5 :  a woman is riding a horse
+Truth  6 :  the turtle is walking
+Sample ( 0 )  6 :  a turtle is walking
+Truth  7 :  dog is barking and shaking his tail
+Sample ( 0 )  7 :  a dog is barking
+Truth  8 :  the plane soared in the sky
+Sample ( 0 )  8 :  a plane is flying
+Truth  9 :  a man is cutting an apple without knife
+Sample ( 0 )  9 :  someone is cutting an apple
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat is playing with cat
+Truth  1 :  the person is cutting tomato
+Sample ( 0 )  1 :  a man is slicing an onion
+Truth  2 :  a man is writing
+Sample ( 0 )  2 :  a man is playing a paper
+Truth  3 :  a man is doing some skating stunts
+Sample ( 0 )  3 :  a man is playing a ball
+Truth  4 :  the person is playing drums
+Sample ( 0 )  4 :  a man is playing the drums
+Truth  5 :  someone petting a beaver
+Sample ( 0 )  5 :  a cat is eating food
+Truth  6 :  a person eating with hands and spoon
+Sample ( 0 )  6 :  a man is talking
+Truth  7 :  a boy trying to walk and dance
+Sample ( 0 )  7 :  a woman is peeling a ball
+Truth  8 :  a man cuts some wood with a knife
+Sample ( 0 )  8 :  a man is cutting a card trick
+Truth  9 :  a cat jumping out a box
+Sample ( 0 )  9 :  a cat is playing
+
+
+
+Epoch 20:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  three animated girls are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a boy is playing guitar
+Truth  2 :  a boy playing with the scissors
+Sample ( 0 )  2 :  a boy is cutting paper
+Truth  3 :  someone sliced an onion
+Sample ( 0 )  3 :  a man is cutting an onion
+Truth  4 :  very strong young man
+Sample ( 0 )  4 :  a man doing push-ups
+Truth  5 :  the girl rode the horse next to the fence
+Sample ( 0 )  5 :  a woman riding a horse
+Truth  6 :  the turtle is walking
+Sample ( 0 )  6 :  a turtle is walking
+Truth  7 :  dog is barking and shaking his tail
+Sample ( 0 )  7 :  a dog is barking
+Truth  8 :  the plane soared in the sky
+Sample ( 0 )  8 :  a plane is flying
+Truth  9 :  a man is cutting an apple without knife
+Sample ( 0 )  9 :  a man is cutting a apple
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat is playing
+Truth  1 :  the person is cutting tomato
+Sample ( 0 )  1 :  a man is cutting a tomato
+Truth  2 :  a man is writing
+Sample ( 0 )  2 :  a man is playing a paper
+Truth  3 :  a man is doing some skating stunts
+Sample ( 0 )  3 :  a man is playing a ball
+Truth  4 :  the person is playing drums
+Sample ( 0 )  4 :  a man is playing guitar
+Truth  5 :  someone petting a beaver
+Sample ( 0 )  5 :  a cat is eating some food
+Truth  6 :  a person eating with hands and spoon
+Sample ( 0 )  6 :  a man is talking
+Truth  7 :  a boy trying to walk and dance
+Sample ( 0 )  7 :  a woman is dancing
+Truth  8 :  a man cuts some wood with a knife
+Sample ( 0 )  8 :  a man is cutting a paper
+Truth  9 :  a cat jumping out a box
+Sample ( 0 )  9 :  a cat is playing with water
+
+
+
+Epoch 30:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  three girls are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a boy is playing a guitar
+Truth  2 :  a boy playing with the scissors
+Sample ( 0 )  2 :  a boy is cutting paper
+Truth  3 :  someone sliced an onion
+Sample ( 0 )  3 :  someone is slicing an onion
+Truth  4 :  very strong young man
+Sample ( 0 )  4 :  a man doing push-ups
+Truth  5 :  the girl rode the horse next to the fence
+Sample ( 0 )  5 :  a girl riding a horse
+Truth  6 :  the turtle is walking
+Sample ( 0 )  6 :  a turtle is walking
+Truth  7 :  dog is barking and shaking his tail
+Sample ( 0 )  7 :  a dog is barking
+Truth  8 :  the plane soared in the sky
+Sample ( 0 )  8 :  a plane is flying
+Truth  9 :  a man is cutting an apple without knife
+Sample ( 0 )  9 :  a man is cutting an apple
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat is playing
+Truth  1 :  the person is cutting tomato
+Sample ( 0 )  1 :  a man cooking his kichen
+Truth  2 :  a man is writing
+Sample ( 0 )  2 :  a man is playing a paper
+Truth  3 :  a man is doing some skating stunts
+Sample ( 0 )  3 :  a boy is playing with a dog
+Truth  4 :  the person is playing drums
+Sample ( 0 )  4 :  a man is playing drums
+Truth  5 :  someone petting a beaver
+Sample ( 0 )  5 :  a cat is eating food
+Truth  6 :  a person eating with hands and spoon
+Sample ( 0 )  6 :  a man is talking
+Truth  7 :  a boy trying to walk and dance
+Sample ( 0 )  7 :  a girl is dancing
+Truth  8 :  a man cuts some wood with a knife
+Sample ( 0 )  8 :  a man is peeling a gun
+Truth  9 :  a cat jumping out a box
+Sample ( 0 )  9 :  a cat is playing
+
+
+
+Epoch 40:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  people are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a boy playing guitar
+Truth  2 :  a boy playing with the scissors
+Sample ( 0 )  2 :  a boy is cutting paper
+Truth  3 :  someone sliced an onion
+Sample ( 0 )  3 :  a man is slicing an onion
+Truth  4 :  very strong young man
+Sample ( 0 )  4 :  a man is doing push-ups
+Truth  5 :  the girl rode the horse next to the fence
+Sample ( 0 )  5 :  a woman riding a horse
+Truth  6 :  the turtle is walking
+Sample ( 0 )  6 :  a turtle is walking
+Truth  7 :  dog is barking and shaking his tail
+Sample ( 0 )  7 :  a dog is barking
+Truth  8 :  the plane soared in the sky
+Sample ( 0 )  8 :  a plane is flying
+Truth  9 :  a man is cutting an apple without knife
+Sample ( 0 )  9 :  a person is breaking an apple
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  a cat is playing
+Truth  1 :  the person is cutting tomato
+Sample ( 0 )  1 :  a man cooking his kichen
+Truth  2 :  a man is writing
+Sample ( 0 )  2 :  a person is playing
+Truth  3 :  a man is doing some skating stunts
+Sample ( 0 )  3 :  a man is playing with a dog
+Truth  4 :  the person is playing drums
+Sample ( 0 )  4 :  a man is playing a guitar
+Truth  5 :  someone petting a beaver
+Sample ( 0 )  5 :  a cat is eating food
+Truth  6 :  a person eating with hands and spoon
+Sample ( 0 )  6 :  a man is talking
+Truth  7 :  a boy trying to walk and dance
+Sample ( 0 )  7 :  a woman is exercising
+Truth  8 :  a man cuts some wood with a knife
+Sample ( 0 )  8 :  a man is doing a card trick
+Truth  9 :  a cat jumping out a box
+Sample ( 0 )  9 :  a cat is playing
+
+
+
+Epoch 50:
+------------- sampling from train ----------
+Truth  0 :  three toys are dancing
+Sample ( 0 )  0 :  people are dancing
+Truth  1 :  a kid playing guitar
+Sample ( 0 )  1 :  a boy is playing guitar
+Truth  2 :  a boy playing with the scissors
+Sample ( 0 )  2 :  a boy is cutting paper
+Truth  3 :  someone sliced an onion
+Sample ( 0 )  3 :  a man is slicing an onion
+Truth  4 :  very strong young man
+Sample ( 0 )  4 :  a man is doing push-ups
+Truth  5 :  the girl rode the horse next to the fence
+Sample ( 0 )  5 :  a girl riding a horse
+Truth  6 :  the turtle is walking
+Sample ( 0 )  6 :  a turtle is walking
+Truth  7 :  dog is barking and shaking his tail
+Sample ( 0 )  7 :  a dog is barking
+Truth  8 :  the plane soared in the sky
+Sample ( 0 )  8 :  a plane is flying
+Truth  9 :  a man is cutting an apple without knife
+Sample ( 0 )  9 :  a person is slicing an apple
+------------- sampling from valid ----------
+Truth  0 :  two cats playfully fight
+Sample ( 0 )  0 :  the cat is playing
+Truth  1 :  the person is cutting tomato
+Sample ( 0 )  1 :  a man is slicing an onion
+Truth  2 :  a man is writing
+Sample ( 0 )  2 :  a man is playing a computer
+Truth  3 :  a man is doing some skating stunts
+Sample ( 0 )  3 :  the boy is doing the something
+Truth  4 :  the person is playing drums
+Sample ( 0 )  4 :  a man is playing drums
+Truth  5 :  someone petting a beaver
+Sample ( 0 )  5 :  the animal is eating
+Truth  6 :  a person eating with hands and spoon
+Sample ( 0 )  6 :  a man is talking
+Truth  7 :  a boy trying to walk and dance
+Sample ( 0 )  7 :  the girl is doing the something
+Truth  8 :  a man cuts some wood with a knife
+Sample ( 0 )  8 :  a man is doing a trick
+Truth  9 :  a cat jumping out a box
+Sample ( 0 )  9 :  a cat is playing
