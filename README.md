@@ -10,7 +10,7 @@ In this project, we explore a deep learning encoder-decoder framework that descr
 Steps to access ARC nodes can be followed by the "Accessing the Cluster" section from [ARC Cluters](http://moss.csc.ncsu.edu/~mueller/cluster/arc/)
 
 ## Assign node
-Once looged in to the ARC cluster, you will have to assign a node to install dependencies in your workspace. 
+Once logged in to the ARC cluster, you will have to assign a node to install dependencies in your workspace. 
 
 To check available nodes, run
 ```
