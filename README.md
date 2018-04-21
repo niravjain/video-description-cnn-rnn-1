@@ -1,4 +1,4 @@
-# Analyzing Hyperparameters for a CNN RNN Video Description Framework
+# Analyzing Hyperparameters for a CNN LSTM Video Description Framework
 
 In this project, we explore a deep learning encoder-decoder framework that describes objects or/and activities in a video by modelling the local and global temporal structure of videos. The framework "arctic-capgen-vid" consists of deep Convolutional Neural Networks (CNNs) which serve as an encoder and Long Short-Term Memory Network (LSTM) for the decoder. This design has been proven effective for producing high learning capacity models for video to text translations as long as critical hyperparameters are identified and provided with appropriate values.  Our study therefore seeks to discover the pivotal hyperparameters and experimental conditions in which this approach works best. The framework for our experiments provides description for the Youtube2Text dataset and performs exceptionally well for both BLEU and METEOR metrics.
 
